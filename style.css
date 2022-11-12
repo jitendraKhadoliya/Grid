@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    height: 400px;
+    background-color: orange;
+    color: azure;
+    display: grid;
+    border: solid 2px slateblue;
+    margin: 50px auto;
+    grid-template-columns: repeat(3,150px);
+    grid-auto-rows: 70px;
+    gap: 10px 15px;
+    /* justify-items: end; */
+    /* align-items: center;   */
+    /* place-items: stretch center; */
+    /* justify-content:space-around; */
+    /* align-content: center; */
+    /* for shorthand we can use place-contant */
+    place-content: center;
+    
+}
+
+
+.item{
+    padding: 5px;
+    background-color: bisque;
+    border: 2px solid rgb(47, 36, 202);
+    color: black;
+}
+
+/* let assume i want to style only item 8 */
+.item8{
+    background-color: royalblue;
+     justify-self:end;
+    align-self:start; 
+
+    /* their short-hand propety  */
+    /* place-self: end start;  */
+    /* place value first takes vertical direction after that i takes horizontal direction */
+}
